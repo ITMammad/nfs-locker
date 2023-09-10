@@ -1,0 +1,14 @@
+{
+  "name": "nsfile-locker",
+  "version": "0.0.1",
+  "description": "This CLI App Helps You To Protect All File Formats With Password...",
+  "main": "nfs-locker.js",
+  "author": "ITMammad",
+  "license": "Apache-2.0",
+  "private": false,
+  "dependencies": {
+    "commander": "^11.0.0",
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security"
+  }
+}
