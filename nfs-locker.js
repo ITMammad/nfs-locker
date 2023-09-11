@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { Command } = require('commander');
 const fs = require("node:fs");
 const funcs = require('./funcs');
