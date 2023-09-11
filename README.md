@@ -2,7 +2,7 @@
 NFS-Locker Is A Tool That Helps You To Encrypt And Decrypt Files Using Password Easily...
 - ***This Algorithm Don't Needs Very Strong Passwords, Because The Password Is Hashed And Can't Be Recovered By SomeOne Else.***
 # Installation
-- NPM (Recommended): Download This Project And Run This Command: `npm i -g /path/to/nfs-locker`
+- NPM (Recommended): Download This Project And Run This Command: `npm i -g nfs-locker`
 - Download: You Can Use This App Without Running That Command, With Using Local File Pointing: `node /path/to/nfs-lockernfs-locker.js <enc/dec> <input> <output> <password>`
 # How To
 These Are Two Commands Provided:
