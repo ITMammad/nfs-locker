@@ -1,17 +1,15 @@
 {
-  "name": "nfs-locker",
-  "version": "1.0.0",
-  "description": "A CLI App That Helps You To Protect All File Formats With Password...",
-  "main": "nfs-locker.js",
-  "author": "ITMammad",
-  "license": "Apache-2.0",
-  "private": false,
-  "dependencies": {
-    "commander": "^11.0.0",
-    "crypto": "^1.0.1",
-    "fs": "^0.0.1-security"
-  },
-  "bin": { 
-	"nfs-locker": "./nfs-locker.js"
-  }
+	"name": "nfs-locker",
+	"version": "1.0.0",
+	"description": "A CLI App That Helps You To Protect All File Formats With Password...",
+	"main": "nfs-locker.js",
+	"author": "ITMammad",
+	"license": "Apache-2.0",
+	"private": false,
+	"dependencies": {
+		"commander": "^11.0.0"
+	},
+	"bin": {
+		"nfs-locker": "./nfs-locker.js"
+	}
 }
