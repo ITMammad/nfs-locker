@@ -33,7 +33,7 @@ module.exports = {
             Buffer.from(inputContents).slice(i * 10485760, (i + 1) * 10485760).toJSON().data.forEach((byte, index) => {
                 outputContentBytes.push(byte + secret[index % 128]);
             });
-            fs.writeFileSync(output, Buffer.concat([fs.readFileSync(output), Buffer.from(outputContentBytes)]))
+            fs.writeFileSync(output, Buffer.from(outputContentBytes), { flag: "a" });
         }
         console.clear();
         console.log(`1. Encrypting ${input} With Password...`);
@@ -56,7 +56,7 @@ module.exports = {
             Buffer.from(inputContents).slice(i * 10485760, (i + 1) * 10485760).toJSON().data.forEach((byte, index) => {
                 outputContentBytes.push(byte - secret[index % 128]);
             });
-            fs.writeFileSync(output, Buffer.concat([fs.readFileSync(output), Buffer.from(outputContentBytes)]))
+            fs.writeFileSync(output, Buffer.from(outputContentBytes), { flag: "a" });
         }
         console.clear();
         console.log(`1. Decrypting ${input} With Password...`);
