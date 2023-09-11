@@ -1,6 +1,6 @@
 # About
 NFS-Locker Is A Tool That Helps You To Encrypt And Decrypt Files Using Password Easily...
-## This Algorithm Don't Needs Very Strong Passwords, Because The Password Is Hashed And Can't Be Recovered By SomeOne Else.
+- ***This Algorithm Don't Needs Very Strong Passwords, Because The Password Is Hashed And Can't Be Recovered By SomeOne Else.***
 # How To
 These Are Two Commands Provided:
 ### Encrypt
