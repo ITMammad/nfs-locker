@@ -4,7 +4,7 @@ const fs = require("node:fs");
 const funcs = require('./funcs');
 
 const program = new Command();
-program.version('1.0.0');
+program.version('1.2.0');
 
 program
 	.command('enc <input> <output> <password>')
