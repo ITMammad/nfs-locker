@@ -31,7 +31,7 @@ module.exports = {
             console.log(`[${this.bar[i % 8]}] Part ${i + 1}/${((inputContents.length - (inputContents.length % 10485760)) / 10485760) + (inputContents.length % 10485760 === 0 ? 0 : 1)}`);
             var outputContentBytes = [];
             Buffer.from(inputContents).slice(i * 10485760, (i + 1) * 10485760).toJSON().data.forEach((byte, index) => {
-                outputContentBytes.push(byte + secret[index % 128]);
+                outputContentBytes.push(byte ^ secret[index % 128]);
             });
             fs.writeFileSync(output, Buffer.from(outputContentBytes), { flag: "a" });
         }
@@ -54,7 +54,7 @@ module.exports = {
             console.log(`[${this.bar[i % 8]}] Part ${i + 1}/${((inputContents.length - (inputContents.length % 10485760)) / 10485760) + (inputContents.length % 10485760 === 0 ? 0 : 1)}`);
             var outputContentBytes = [];
             Buffer.from(inputContents).slice(i * 10485760, (i + 1) * 10485760).toJSON().data.forEach((byte, index) => {
-                outputContentBytes.push(byte - secret[index % 128]);
+                outputContentBytes.push(byte ^ secret[index % 128]);
             });
             fs.writeFileSync(output, Buffer.from(outputContentBytes), { flag: "a" });
         }
